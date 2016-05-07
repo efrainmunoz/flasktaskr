@@ -20,9 +20,9 @@ class AddTaskForm(Form):
 	)
 
 	due_date = DateField(
-		'Date Due (mm/dd/yyyy)',
+		'Date Due (mm/dd/yy)',
 		validators=[DataRequired()],
-		format='%m/%d/%Y'
+		format='%m/%d/%y'
 	)
 
 	priority = SelectField(
